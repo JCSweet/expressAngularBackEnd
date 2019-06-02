@@ -1,14 +1,6 @@
 const express = require("express");
 const carts = express.Router();
 
-// ****array goes here:
-// ***create new file for just the object (see facts example)
-const array = [
-  { id:1, product: 'Apple', price: 1.99, quantity: 1 }
-];
-
-module.exports = {
-  array };
 
 carts.get("/", (req, res) => {
   console.log(req.body);
